@@ -33,6 +33,11 @@ Caso necessite de perfomance dentro da mesma máquina, Unix Domain Socket é rec
 Caso necessite de portabilidade e possibilidade dos processos rodarem em diferentes máquinas, TCP/IP é recomendado.
 
 
+## referências
+1. https://medium.com/codex/unix-domain-sockets-in-net-6-basics-and-real-world-examples-8982898ab293
+1. https://lists.freebsd.org/pipermail/freebsd-performance/2005-February/001143.html
+1. https://www.baeldung.com/cs/loopback-interface-routing-protocols
+
 
 
 
