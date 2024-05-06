@@ -1,4 +1,4 @@
-# Unix Domain Socket
+# Unix Domain Socket (UDS)
 
 Unix Domain Socket é um mecanismo de comunicação inter processo bidirecional (IPC inter-process comuncation).
 Ele é limitado a processos dentro da mesma máquina.
@@ -27,17 +27,17 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 
 Ela não utiliza mecanismos de roteamento e nem a interface física de rede.
 
-Unix Domain Socket são mais performáticos, mas dependem do SO para serem executados. Não é um protocolo universal como TCP/IP.
+Unix Domain Socket são mais performáticos, mas não é um protocolo universal como TCP/IP.
 Caso necessite de perfomance dentro da mesma máquina, Unix Domain Socket é recomendado. 
 
 Caso necessite de portabilidade e possibilidade dos processos rodarem em diferentes máquinas, TCP/IP é recomendado.
 
+## Dotnet, Kestrel e Unix Domain Socket
+
+O kestrel permite expor endpoints 
 
 ## referências
 1. https://medium.com/codex/unix-domain-sockets-in-net-6-basics-and-real-world-examples-8982898ab293
 1. https://lists.freebsd.org/pipermail/freebsd-performance/2005-February/001143.html
 1. https://www.baeldung.com/cs/loopback-interface-routing-protocols
-
-
-
-
+1. https://andrewlock.net/using-unix-domain-sockets-with-aspnetcore-and-httpclient/
